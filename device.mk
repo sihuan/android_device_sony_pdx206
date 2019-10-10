@@ -100,11 +100,9 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
-# DTBO
-LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
-
+# Component overrides
 PRODUCT_COPY_FILES += \
-    $(LOCAL_DTB):dtb.img
+    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/sysconfig/component-overrides.xml
 
 # Display
 PRODUCT_PACKAGES += \
