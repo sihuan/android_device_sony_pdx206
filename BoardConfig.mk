@@ -94,8 +94,8 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 # Treble
 BOARD_VNDK_VERSION := current
 
-# APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
