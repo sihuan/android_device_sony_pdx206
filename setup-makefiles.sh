@@ -17,7 +17,7 @@
 
 set -e
 
-DEVICE_COMMON=pdx203
+DEVICE_COMMON=pdx206
 VENDOR=sony
 
 INITIAL_COPYRIGHT_YEAR=2020
@@ -39,7 +39,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and common guards
-write_headers "pdx203"
+write_headers "pdx206"
 
 # The common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt true

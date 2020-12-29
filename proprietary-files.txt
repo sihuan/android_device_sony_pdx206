@@ -1,4 +1,4 @@
-# Stock package version: Sony/XQ-AT52/XQ-AT52:10/58.0.A.3.224/058000A003022402854466984:user/release-keys
+# Stock package version: Sony/pdx206/pdx206:10/QKQ1.200108.002/1:user/release-keys
 
 # ANT+
 product/lib64/com.qualcomm.qti.ant@1.0.so

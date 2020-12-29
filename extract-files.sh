@@ -14,7 +14,7 @@ fi
 set -e
 
 # Required!
-export DEVICE_COMMON=pdx203
+export DEVICE_COMMON=pdx206
 export VENDOR=sony
 
 export DEVICE_BRINGUP_YEAR=2020

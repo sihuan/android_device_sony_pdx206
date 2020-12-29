@@ -1,4 +1,4 @@
-This repository contains common device configuration for Sony Xperia 1 II
+This repository contains common device configuration for Sony Xperia 5 II
 
 ## Copyright
 

@@ -25,16 +25,16 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := Sony
-PRODUCT_DEVICE := pdx203
+PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_NAME := lineage_pdx203
-PRODUCT_MODEL := Xperia 1 II
+PRODUCT_NAME := lineage_pdx206
+PRODUCT_MODEL := Xperia 5 II
 
 PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
 
-TARGET_VENDOR_PRODUCT_NAME := pdx203
+TARGET_VENDOR_PRODUCT_NAME := pdx206
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="Sony/XQ-AT52/XQ-AT52 10 58.0.A.3.224 058000A003022402854466984:user release-keys"
+    PRIVATE_BUILD_DESC="Sony/pdx206/pdx2062 10 QKQ1.200108.002 1:user release-keys"
 
-BUILD_FINGERPRINT := Sony/XQ-AT52/XQ-AT52:10/58.0.A.3.224/058000A003022402854466984:user/release-keys
+BUILD_FINGERPRINT := Sony/pdx206/pdx206:10/QKQ1.200108.002/1:user/release-keys
