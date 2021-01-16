@@ -88,9 +88,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Using Sony Vendor Camera
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    SemcCameraUI
 
 # Common init scripts
 PRODUCT_PACKAGES += \
