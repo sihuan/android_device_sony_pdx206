@@ -27,6 +27,10 @@ $(call inherit-product, vendor/sony/pdx206/pdx206-vendor.mk)
 # Inherit from common
 $(call inherit-product, device/sony/edo-common/edo.mk)
 
+# Custom sony stuff
+# Note: closed sourced
+#$(call inherit-product, device/sony/xperia-common/xperia.mk)
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
@@ -46,3 +50,7 @@ PRODUCT_COPY_FILES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# Device specific overlay
+DEVICE_PACKAGE_OVERLAYS += \
+     $(LOCAL_PATH)/overlay-pe
