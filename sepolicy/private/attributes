@@ -1,7 +1,3 @@
-<<<<<<< HEAD
 attribute hal_display;
 attribute hal_display_client;
 attribute hal_display_server;
-=======
-hal_attribute_lineage(display)
->>>>>>> a77f4d4 (pdx203: fix never allows)
