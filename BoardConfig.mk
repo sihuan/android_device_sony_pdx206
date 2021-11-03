@@ -60,5 +60,9 @@ TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+SELINUX_IGNORE_NEVERALLOWS := true
+
+BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
+
 # Inherit from the proprietary version
 -include vendor/sony/pdx206/BoardConfigVendor.mk
