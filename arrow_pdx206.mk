@@ -26,6 +26,8 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
+WITH_GAPPS := true
+ARROW_GAPPS := true
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
