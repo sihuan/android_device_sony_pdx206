@@ -21,17 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from common.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Arrow-OS stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common exTHmui stuff
+$(call inherit-product, vendor/exthm/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
-WITH_GAPPS := true
-ARROW_GAPPS := true
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_NAME := arrow_pdx206
+PRODUCT_NAME := exthm_pdx206
 PRODUCT_MODEL := Xperia 5 II
 PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
 
