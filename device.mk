@@ -27,22 +27,10 @@ $(call inherit-product, vendor/sony/pdx206/pdx206-vendor.mk)
 # Inherit from common
 $(call inherit-product, device/sony/edo-common/edo.mk)
 
-<<<<<<< HEAD
-# Custom sony stuff
-# Note: closed sourced
-#$(call inherit-product, device/sony/xperia-common/xperia.mk)
-
-=======
->>>>>>> d101c55 (Initial Commit for Arrow-OS 12!)
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
-
-
-# Using Sony Vendor Camera
-PRODUCT_PACKAGES += \
-    SemcCameraUI
 
 # DTBO
 LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
@@ -50,9 +38,7 @@ LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
 PRODUCT_COPY_FILES += \
     $(LOCAL_DTB):dtb.img
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
+
 
 # Shims
 PRODUCT_PACKAGES += \
@@ -69,3 +55,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # MTP
 PRODUCT_PRODUCT_PROPERTIES += \
 	persist.sys.usb.config=mtp,adb
+
+
+# Device specific overlay
+DEVICE_PACKAGE_OVERLAYS += \
+     $(LOCAL_PATH)/overlay-pe

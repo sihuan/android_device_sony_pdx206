@@ -24,6 +24,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common Arrow-OS stuff
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# Inherit Lawnchair stuff
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 WITH_GAPPS := true
