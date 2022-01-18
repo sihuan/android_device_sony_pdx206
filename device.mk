@@ -27,13 +27,10 @@ $(call inherit-product, vendor/sony/pdx206/pdx206-vendor.mk)
 # Inherit from common
 $(call inherit-product, device/sony/edo-common/edo.mk)
 
-<<<<<<< HEAD
 # Custom sony stuff
 # Note: closed sourced
 #$(call inherit-product, device/sony/xperia-common/xperia.mk)
 
-=======
->>>>>>> d101c55 (Initial Commit for Arrow-OS 12!)
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi

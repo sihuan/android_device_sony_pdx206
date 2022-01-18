@@ -25,7 +25,13 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/exthm/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
 IS_PHONE := true
+
+# Gapps
+EXTHM_GAPPS := true
+
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
