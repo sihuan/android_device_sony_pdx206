@@ -15,27 +15,24 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+# $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from common.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common exTHmui stuff
-$(call inherit-product, vendor/exthm/config/common.mk)
-
+# Inherit some common PixelExperience stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
-IS_PHONE := true
-
-# Gapps
-EXTHM_GAPPS := true
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_USES_AOSP_RECOVERY := true
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_NAME := exthm_pdx206
+PRODUCT_NAME := aosp_pdx206
 PRODUCT_MODEL := Xperia 5 II
 PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
 

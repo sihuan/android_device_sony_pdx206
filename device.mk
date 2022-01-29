@@ -16,7 +16,7 @@
 #
 
 # Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+# $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -31,11 +31,9 @@ $(call inherit-product, device/sony/edo-common/edo.mk)
 # Note: closed sourced
 #$(call inherit-product, device/sony/xperia-common/xperia.mk)
 
-# Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
-
-
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2520
+TARGET_SCREEN_WIDTH := 1080
 
 # Using Sony Vendor Camera
 PRODUCT_PACKAGES += \
@@ -46,10 +44,6 @@ LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_DTB):dtb.img
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # Shims
 PRODUCT_PACKAGES += \

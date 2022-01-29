@@ -20,8 +20,8 @@
 DEVICE_PATH := device/sony/pdx206
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 2520
+TARGET_SCREEN_WIDTH := 1080
 
 # Display
 TARGET_SCREEN_DENSITY := 417
@@ -63,6 +63,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 SELINUX_IGNORE_NEVERALLOWS := true
 
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
+
+TARGET_SUPPORTS_64_BIT_APPS := true
 
 # Inherit from the proprietary version
 -include vendor/sony/pdx206/BoardConfigVendor.mk
